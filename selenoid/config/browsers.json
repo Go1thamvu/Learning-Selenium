@@ -30,10 +30,10 @@
         }
     },
     "android": {
-        "default": "8.1",
+        "default": "75.0",
         "versions": {
-            "8.1": {
-                "image": "selenoid/android:8.1",
+            "75.0": {
+                "image": "selenoid/chrome-mobile:75.0",
                 "port": "4444",
                 "path": "/wd/hub"
             }
