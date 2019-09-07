@@ -5,7 +5,7 @@ require __DIR__.'/../vendor/autoload.php';
 use Facebook\WebDriver\Remote\DesiredCapabilities;
 use Facebook\WebDriver\Remote\WebDriverCapabilityType;
 use Facebook\WebDriver\Remote\WebDriverBrowserType;
-use Symfony\Component\Panther\Client;
+use Facebook\WebDriver\Remote\RemoteWebDriver;
 
 $caps = new DesiredCapabilities();
 $caps->setCapability(WebDriverCapabilityType::BROWSER_NAME, WebDriverBrowserType::CHROME);
@@ -14,11 +14,12 @@ $caps->setCapability(WebDriverCapabilityType::VERSION, '76.0');
 $caps->setCapability('enableVNC', true);
 $caps->setCapability('enableLog', false);
 $caps->setCapability('enableVideo', true);
-$client = Client::createSeleniumClient('http://localhost:4444/wd/hub', $caps);
+
+$driver = RemoteWebDriver::create('http://localhost:4444/wd/hub', $caps);
 
 $url = 'https://www.phptravels.net/';
 
-$client->get($url);
+$driver->get($url);
 
-$client->quit();
+$driver->quit();
 

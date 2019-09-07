@@ -1,6 +1,5 @@
 {
     "require": {
-        "facebook/webdriver": "^1.7",
-        "symfony/panther": "^0.5.2"
+        "facebook/webdriver": "^1.7"
     }
 }
