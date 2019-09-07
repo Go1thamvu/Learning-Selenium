@@ -22,4 +22,3 @@ $url = 'https://www.phptravels.net/';
 $driver->get($url);
 
 $driver->quit();
-
