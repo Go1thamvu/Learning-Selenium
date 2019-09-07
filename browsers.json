@@ -9,7 +9,7 @@
             }
         }
     },
-	"firefox": {
+    "firefox": {
         "default": "68.0",
         "versions": {
             "68.0": {
@@ -19,7 +19,7 @@
             }
         }
     },
-	"opera": {
+    "opera": {
         "default": "62.0",
         "versions": {
             "62.0": {
@@ -29,7 +29,7 @@
             }
         }
     },
-	"android": {
+    "android": {
         "default": "8.1",
         "versions": {
             "8.1": {
