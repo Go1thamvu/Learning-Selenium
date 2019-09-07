@@ -1,7 +1,9 @@
-# Learning-Selenium
+# Learning-Selenium [![Build Status][travis_badge]][travis_link]
 
 ### Install
 ```
+$ composer install --no-dev
+
 $ docker network create selenoid
 
 $ docker pull selenoid/vnc:chrome_76.0
@@ -15,3 +17,6 @@ $ docker pull selenoid/video-recorder:latest-release
 ```
 $ docker-compose up
 ```
+
+[travis_badge]: https://travis-ci.org/Go1thamvu/Learning-Selenium.svg?branch=master
+[travis_link]: https://travis-ci.org/Go1thamvu/Learning-Selenium
