@@ -31,8 +31,6 @@ $password = 'zaq12wsx';
 $driver->get($baseUrl);
 $driver->manage()->window()->setSize(new WebDriverDimension(1024, 768));
 $driver->wait(10, 1000)->until(
-    $$driver->findElement(WebDriverBy::xpath("(.//*[normalize-space(text()) and normalize-space(.)='My Account'])[2]/following::a[1]"))->click()
+    $driver->findElement(WebDriverBy::xpath("(.//*[normalize-space(text()) and normalize-space(.)='My Account'])[2]/following::a[1]"))->click()
 );
-
-
 $driver->quit();
