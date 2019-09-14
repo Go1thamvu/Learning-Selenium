@@ -16,6 +16,7 @@ $caps->setCapability('selenoid:options', [
     WebDriverCapabilityType::BROWSER_NAME => WebDriverBrowserType::ANDROID,
     'skin' => 'WXGA720',
 ]);
+
 // These capabilities are for Selenoid only
 $caps->setCapability('enableVNC', true);
 $caps->setCapability('enableLog', false);
