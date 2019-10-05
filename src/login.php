@@ -2,13 +2,13 @@
 
 require __DIR__.'/../vendor/autoload.php';
 
-use Webmozart\Assert\Assert;
 use Facebook\WebDriver\Remote\DesiredCapabilities;
 use Facebook\WebDriver\Remote\WebDriverCapabilityType;
 use Facebook\WebDriver\Remote\WebDriverBrowserType;
 use Facebook\WebDriver\Remote\RemoteWebDriver;
 use Facebook\WebDriver\WebDriverExpectedCondition;
 use Facebook\WebDriver\WebDriverBy;
+use Webmozart\Assert\Assert;
 
 $caps = new DesiredCapabilities();
 $caps->setCapability(WebDriverCapabilityType::BROWSER_NAME, WebDriverBrowserType::CHROME);
