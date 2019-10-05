@@ -1,6 +1,7 @@
 {
     "require": {
-        "facebook/webdriver": "^1.7"
+        "facebook/webdriver": "^1.7",
+        "webmozart/assert": "^1.5"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^2.15"
